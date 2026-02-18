@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <strong>Translation API — drop-in Google Translate v2 replacement, powered by LLMs</strong>
+  <strong>Translation API — drop-in Google Translate v2 replacement, context-aware, 81-90% cheaper</strong>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ---
 
-**Langbly** is a translation API that's a drop-in replacement for Google Translate v2. Same request format, same response shape — switch in one PR. Powered by LLMs for higher quality translations at a fraction of the cost.
+**Langbly** is a translation API that's a drop-in replacement for Google Translate v2. Same request format, same response shape. Switch in one PR. Higher quality translations at a fraction of the cost.
 
 ### Why developers switch to Langbly
 
@@ -31,7 +31,7 @@
 |---|---|---|---|
 | **Price per 1M chars** | $20 | $25 | **$1.99–$4** |
 | **API compatibility** | — | Own format | **Google Translate v2** |
-| **Translation quality** | Statistical | Neural | **LLM (context-aware)** |
+| **Translation quality** | Statistical | Neural | **Context-aware** |
 | **Free tier** | None | 500K/mo | **500K trial** |
 | **Locale formatting** | ❌ | ❌ | **✅ Automatic** |
 
@@ -80,19 +80,19 @@ curl -X POST https://api.langbly.com/language/translate/v2 \
 
 | Repository | Description | Install |
 |------------|-------------|---------|
-| [langbly-python](https://github.com/Langbly/langbly-python) | Python SDK — async support, auto-retry, typed errors | `pip install langbly` |
-| [langbly-js](https://github.com/Langbly/langbly-js) | JS/TS SDK — native fetch, zero dependencies, TypeScript | `npm install langbly` |
+| [langbly-python](https://github.com/Langbly/langbly-python) | Python SDK with async support, auto-retry, typed errors | `pip install langbly` |
+| [langbly-js](https://github.com/Langbly/langbly-js) | JS/TS SDK with native fetch, zero dependencies, TypeScript | `npm install langbly` |
 | [examples](https://github.com/Langbly/examples) | curl examples, migration guides, code samples | — |
 
 ### Features
 
-- **Google Translate v2 compatible** — same `/language/translate/v2` endpoint
-- **LLM-powered** — understands context, tone, idioms, and locale conventions
-- **Auto-retry** — exponential backoff with Retry-After support in both SDKs
-- **Locale formatting** — automatic decimal, date, and currency formatting per target language
-- **Batch translation** — translate multiple texts in a single request
-- **Language detection** — identify source language automatically
-- **HTML support** — translate HTML while preserving tags and attributes
+- **Google Translate v2 compatible** - same `/language/translate/v2` endpoint
+- **Context-aware** - understands tone, idioms, and locale conventions
+- **Auto-retry** - exponential backoff with Retry-After support in both SDKs
+- **Locale formatting** - automatic decimal, date, and currency formatting per target language
+- **Batch translation** - translate multiple texts in a single request
+- **Language detection** - identify source language automatically
+- **HTML support** - translate HTML while preserving tags and attributes
 
 ### Pricing
 
@@ -105,7 +105,7 @@ curl -X POST https://api.langbly.com/language/translate/v2 \
 
 Annual plans: **20% off**. Overage: $4/1M characters.
 
-→ [Start free](https://langbly.com/signup) — no credit card required
+→ [Start free](https://langbly.com/signup) - no credit card required
 
 ---
 
