@@ -9,6 +9,7 @@
 <p align="center">
   <a href="https://pypi.org/project/langbly/"><img src="https://img.shields.io/pypi/v/langbly?label=pypi&color=blue" alt="PyPI"></a>
   <a href="https://www.npmjs.com/package/langbly"><img src="https://img.shields.io/npm/v/langbly?color=blue" alt="npm"></a>
+  <a href="https://packagist.org/packages/langbly/langbly-php"><img src="https://img.shields.io/packagist/v/langbly/langbly-php?color=blue" alt="Packagist"></a>
   <a href="https://langbly.com"><img src="https://img.shields.io/badge/website-langbly.com-orange" alt="Website"></a>
   <a href="https://langbly.com/docs"><img src="https://img.shields.io/badge/docs-langbly.com%2Fdocs-green" alt="Docs"></a>
 </p>
@@ -38,8 +39,9 @@
 ### Install
 
 ```bash
-pip install langbly          # Python
-npm install langbly          # JavaScript / TypeScript
+pip install langbly                    # Python
+npm install langbly                    # JavaScript / TypeScript
+composer require langbly/langbly-php   # PHP
 ```
 
 ### Quick Start
@@ -82,6 +84,7 @@ curl -X POST https://api.langbly.com/language/translate/v2 \
 |------------|-------------|---------|
 | [langbly-python](https://github.com/Langbly/langbly-python) | Python SDK with async support, auto-retry, typed errors | `pip install langbly` |
 | [langbly-js](https://github.com/Langbly/langbly-js) | JS/TS SDK with native fetch, zero dependencies, TypeScript | `npm install langbly` |
+| [langbly-php](https://github.com/Langbly/langbly-php) | PHP SDK with Guzzle, auto-retry, typed exceptions | `composer require langbly/langbly-php` |
 | [examples](https://github.com/Langbly/examples) | curl examples, migration guides, code samples | — |
 
 ### Features
